@@ -1,16 +1,16 @@
 # WeatherHUB
 
-Ein modernes Wetter-Dashboard, das Wetterdaten aus mehreren zuverlässigen Wetter-APIs abruft, den Durchschnitt der Daten berechnet und präzise Wetterinformationen anzeigt. Dieses Projekt kombiniert eine ansprechende grafische Oberfläche mit einem robusten Backend, um die Genauigkeit der Wettervorhersage zu verbessern.
+A modern weather dashboard that retrieves weather data from multiple reliable weather APIs, calculates averages for enhanced accuracy, and displays precise weather information. This project blends an appealing graphical interface with a robust backend to improve weather forecasting reliability.
 
-## Funktionen
+## Features
 
-- **Mehrere Wetter-APIs:** OpenWeatherMap, WeatherAPI.com und MetaWeather
-- **Durchschnittsberechnung:** Temperatur und Luftfeuchtigkeit werden aus den verschiedenen APIs gemittelt
-- **Moderne Benutzeroberfläche:** Ähnlich wie die Wetter-Apps von Apple oder Samsung
-- **Responsives Design:** Funktioniert auf verschiedenen Geräten und Bildschirmgrößen
-- **Animationsunterstützung:** Sanfte Übergänge und Animationen für eine bessere Benutzererfahrung
+- **Multiple Weather APIs:** Supports OpenWeatherMap, WeatherAPI.com, and MetaWeather.
+- **Average Calculation:** Aggregates and averages temperature and humidity from multiple APIs for enhanced accuracy.
+- **Modern User Interface:** Designed to resemble popular weather apps like Apple Weather or Samsung Weather.
+- **Responsive Design:** Optimized for various devices and screen sizes.
+- **Animation Support:** Smooth transitions and animations for an improved user experience.
 
-## Technologien
+## Technologies Used
 
 - **Backend:**
   - Node.js
@@ -20,108 +20,108 @@ Ein modernes Wetter-Dashboard, das Wetterdaten aus mehreren zuverlässigen Wette
   - CORS
 - **Frontend:**
   - HTML5
-  - CSS3 (inkl. Flexbox und Animationen)
+  - CSS3 (including Flexbox and animations)
   - JavaScript (ES6)
 
-## Installation
+## Installation Guide
 
-### Voraussetzungen
+### Prerequisites
 
-- **Node.js** und **npm** installiert
-- API-Schlüssel von [OpenWeatherMap](https://openweathermap.org/api) und [WeatherAPI.com](https://www.weatherapi.com/)
+- Installed **Node.js** and **npm**.
+- API keys from [OpenWeatherMap](https://openweathermap.org/api) and [WeatherAPI.com](https://www.weatherapi.com/).
 
-### Schritte
+### Steps to Install
 
-1. **Klone das Repository:**
+1. **Clone the Repository:**
 
     ```bash
-    git clone https://github.com/dein-benutzername/weather-dashboard.git
+    git clone https://github.com/your-username/weather-dashboard.git
     cd weather-dashboard
     ```
 
-2. **Backend Setup:**
+2. **Setup the Backend:**
 
-    Navigiere zum `backend`-Ordner:
+    Navigate to the `backend` folder:
 
     ```bash
     cd backend
     ```
 
-    Installiere die Abhängigkeiten:
+    Install dependencies:
 
     ```bash
     npm install
     ```
 
-    Erstelle eine `.env`-Datei und füge deine API-Schlüssel hinzu:
+    Create a `.env` file and add your API keys:
 
     ```env
     PORT=5000
-    OPENWEATHER_API_KEY=dein_openweathermap_api_schlüssel
-    WEATHERAPI_API_KEY=dein_weatherapi_com_api_schlüssel
+    OPENWEATHER_API_KEY=your_openweathermap_api_key
+    WEATHERAPI_API_KEY=your_weatherapi_com_api_key
     ```
 
-    Starte den Backend-Server:
+    Start the backend server:
 
     ```bash
     npm start
     ```
 
-    Der Server läuft auf `http://localhost:5000`.
+    The server will run at `http://localhost:5000`.
 
-3. **Frontend Setup:**
+3. **Setup the Frontend:**
 
-    Öffne ein neues Terminal und navigiere zum `frontend`-Ordner:
+    Open a new terminal and navigate to the `frontend` folder:
 
     ```bash
     cd ../frontend
     ```
 
-    Starte einen einfachen HTTP-Server. Du kannst dazu `http-server` verwenden. Installiere es global, falls noch nicht geschehen:
+    Start a simple HTTP server. You can use `http-server`. Install it globally if you don’t have it:
 
     ```bash
     npm install -g http-server
     ```
 
-    Starte den Server:
+    Start the server:
 
     ```bash
     http-server -c-1
     ```
 
-    **Alternativ:** Öffne einfach die `index.html`-Datei im Browser.
+    **Alternatively:** Open the `index.html` file directly in your browser.
 
-    **Hinweis:** Stelle sicher, dass der Backend-Server läuft, da das Frontend Daten von `http://localhost:5000` abruft.
+    **Note:** Ensure the backend server is running as the frontend fetches data from `http://localhost:5000`.
 
-## Nutzung
+## Usage
 
-1. **Starte den Backend-Server:**
+1. **Start the Backend Server:**
 
     ```bash
     cd backend
     npm start
     ```
 
-2. **Öffne das Frontend:**
+2. **Launch the Frontend:**
 
-    Öffne die `frontend/index.html`-Datei in deinem Browser oder starte einen lokalen HTTP-Server.
+    Open the `frontend/index.html` file in your browser or start a local HTTP server.
 
-3. **Wetterdaten abrufen:**
+3. **Fetch Weather Data:**
 
-    - Gib den Namen einer Stadt in das Suchfeld ein.
-    - Klicke auf "Suchen" oder drücke die Enter-Taste.
-    - Die Anwendung zeigt die durchschnittliche Temperatur, Luftfeuchtigkeit und eine Wetterbeschreibung an.
+    - Enter the name of a city in the search field.
+    - Click "Search" or press the Enter key.
+    - The application will display the average temperature, humidity, and a weather description.
 
-## Beitrag leisten
+## Contributing
 
-Beiträge sind willkommen! Bitte folge diesen Schritten:
+Contributions are welcome! Follow these steps:
 
-1. **Fork** das Repository.
-2. **Erstelle** einen neuen Branch (`git checkout -b feature/NeuesFeature`).
-3. **Commit** deine Änderungen (`git commit -m 'Füge neues Feature hinzu'`).
-4. **Push** zum Branch (`git push origin feature/NeuesFeature`).
-5. **Erstelle** eine Pull-Request.
+1. **Fork** the repository.
+2. **Create** a new branch (`git checkout -b feature/NewFeature`).
+3. **Commit** your changes (`git commit -m 'Add new feature'`).
+4. **Push** the branch (`git push origin feature/NewFeature`).
+5. **Submit** a pull request.
 
-## Lizenz
+## License
 
-Dieses Projekt ist unter der MIT-Lizenz lizenziert. Siehe die [LICENSE](LICENSE) Datei für Details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
