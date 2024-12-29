@@ -35,7 +35,7 @@ A modern weather dashboard that retrieves weather data from multiple reliable we
 1. **Clone the Repository:**
 
     ```bash
-    git clone https://github.com/your-username/weather-dashboard.git
+    git clone https://github.com/trayx1/weatherhub.git
     cd weather-dashboard
     ```
 
